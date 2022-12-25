@@ -1,0 +1,120 @@
+.middle{
+    &__top{
+        width: 1200px;
+        height: 577px;
+        top: 357px;
+        position: relative;
+        color: #FEFCF7;
+        background: #2C343E;
+        text-align: center;
+        border-radius: 10px;
+    }
+    &__title{
+        padding-top: 80px;
+        padding-bottom: 20px;
+        @extend %font;
+        @include text(40px, 48px);
+        text-align: center;
+    }
+    &__text{
+        width: 540px;
+        margin: 0 auto;
+        @extend %font2;
+        @include text(16px, 26px);
+        text-align: center;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    &__list{
+        position: relative;
+        top: 120px;
+        left: 65px;
+        padding-bottom: 250px;
+        display: flex;
+        gap: 20px;
+    }
+    &__item{
+        width: 350px;
+        height: 382px;
+        left: 153px;
+        text-align: center;
+        color: #FEFCF7;
+        background: #0E8784;
+        border-radius: 8px;
+    }
+}
+@media only screen and (max-width:900px){
+    .middle{
+        position: relative;
+        padding-top: 444px;
+        // margin-left: 30px;
+        &__top{
+            width: 900px;
+        }
+        &__title{
+            padding-top: 71px;
+            @include text(32px, 48px);
+        }
+        &__list{
+            width: 700px;
+            display: block;
+            top: 70px;
+            text-align: center;
+            
+        }
+        &__item{
+            width: 673px;
+            height: 180px;
+            margin-bottom: 24px;
+            text-align: left;
+            display: flex;
+        }
+        
+    }
+}
+@media only screen and (max-width:600px){
+    .middle{
+        &__top{
+            width: 0;
+        }
+    }
+}
+.item{
+    &__img{
+        padding-top: 75px;
+    }
+    &__title{
+        padding: 56px 0 24px;
+        @extend %font;
+        @include text(24px, 32px);
+    }
+    &__home{
+        @include font2;
+        @include text(12px, 15px);
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;
+        text-decoration: none;
+    }
+    &__text{
+        width: 255px;
+        margin: 0 auto;
+        @extend %font2;
+        @include text(16px, 26px);
+    }
+}
+@media only screen and (max-width:900px){
+    .item{
+        &__img{
+            padding: 62px 70px;
+        }
+        &__title{
+            padding: 41px 55px 16px;
+        }
+        &__text{
+            width: 444px;
+            padding-left: 55px;
+            @include text(15px, 25px);
+        }
+    }
+}

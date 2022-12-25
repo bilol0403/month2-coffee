@@ -1,0 +1,50 @@
+.navbar{
+    @include display(flex, space-between, center);
+    margin-top: 40px; 
+}
+.header{
+    &__list{
+        display: flex;
+        text-decoration: none;
+        gap: 33px;
+        @include font2;
+        @include text(12px, 15px);
+        letter-spacing: 0.923077px;
+        color: #83888F;
+        text-transform: uppercase;
+    }
+    &__link{
+        &:active{
+            color: black;
+        }
+    } 
+    &__hamburger{
+        display: none;
+        flex-direction: column;
+        gap: 3px;
+        span{
+            width: 16px;
+            height: 3px;
+            background: #333D4B;
+            border-radius: 1.5px;
+        }
+    }
+}
+@media only screen and (max-width:900px){
+    .header{
+        width: 100%;
+        // margin-left: 30px;
+        // @include display(flex, space-between, center);
+    }
+}
+@media only screen and (max-width:600px){
+    .header{
+        &__list{
+            display: none;
+        }
+        &__hamburger{
+            display: flex;
+        }
+    }
+}
+

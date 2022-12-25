@@ -1,0 +1,23 @@
+@mixin display($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin text ($font-size, $line-hight){
+    font-size: $font-size;
+    line-height: $line-hight;
+}
+@mixin font2($weight:700px){
+    @extend %font2;
+    font-weight: $weight;
+}
+%font{
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+}
+%font2{
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+}

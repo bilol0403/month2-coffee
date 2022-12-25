@@ -1,0 +1,64 @@
+.work{
+    margin-left: 70px;
+    &__title{
+        @include text(24px, 32px,);
+        @extend %font;
+        color: #83888F;       
+    }
+    &__top{
+        @include display(flex, none, center);
+        margin-top: 80px;
+        margin-bottom: 57px;
+    }
+    &__hr{
+        width: 349px;
+        height: 2px;
+        border: 0;
+        background-color: #FDD6BA;
+    }
+    &__list{
+        @include display(flex, space-between, none);
+        margin-bottom: 68px;
+    }
+    &__main{
+        width: 200px;
+        padding-top: 38px;
+        padding-bottom: 42px;
+        @extend %font;
+        @include text(32px,36px);
+        color: #333D4B;
+    }
+    &__text{
+        width: 285px;
+        @extend %font2;
+        @include text(16px, 26px);
+        color: #333D4B;
+    }
+    &__btn{
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width:900px){
+    .work{
+        // margin-left: 30px;
+        &__top{
+            margin-top: 55px;
+            margin-bottom: 40px;
+        }
+        &__hr{
+            width: 235px;
+        }
+        &__list{
+            @include display(flex, left,none);
+            gap:10px;
+        }
+        &__main{
+            width: 180px;
+            @include text(28px, 32px);
+        }
+        &__text{
+            width: 213px;
+            @include text(15px, 25px);
+        }
+    }
+}

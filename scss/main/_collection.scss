@@ -1,0 +1,93 @@
+.collection{
+    position: relative;
+    
+    &__top{
+        position: relative;
+        padding-left: 50px;
+    }
+    &__list{
+        @include display(flex, space-between, center);
+        position: absolute;
+        top: 130px;
+        left: 50px;
+        padding-bottom: 62px;
+    }
+    &__item{
+        text-align: center;
+        padding-left: 25px;
+    }
+    &__title{
+        padding-top: 50px;
+        padding-bottom: 24px;
+        @extend %font;
+        @include text(24px, 32px);
+        color: #333D4B;
+    }
+    &__text{
+        width: 255px;
+        @extend %font2;
+        @include text(16px, 26px);
+        color: #333D4B;
+    }
+}
+@media only screen and (max-width:900px){
+    .collection{
+        width: 100%;
+        // margin-left: 30px;
+        &__top{
+            width: 100%;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 80px;
+            padding-bottom: 62px;
+        }
+        &__item{
+            display: flex;
+            text-align: start;
+            padding-left: 77px;
+        }
+        &__title{
+            padding-top: 35px;
+            padding-left: 36px; 
+        }
+        &__text{
+            width: 317px;
+            align-items: none;
+            padding-left: 36px;
+        }
+        }      
+}
+@media only screen and (max-width:600px){
+    .collection{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        &__top{
+            size:375px;
+        }
+        &__item{
+            flex-direction: column;
+            padding-left: 40%;
+        }
+        &__img{
+            width: 200px;
+            padding-left: 50px;
+            // margin-left: 87px;
+        }
+        &__title{
+            padding-top: 24px;
+            padding-bottom: 16px;
+            padding-left: 70px;
+            
+        }
+        &__text{
+            width: 315px;
+            padding-left: 10px;
+            padding-bottom: 48px;
+            text-align: center;
+        }
+    }
+}

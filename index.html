@@ -11,19 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./normilize.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <title>coffeeroasters</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <nav class="navbar">
-                <img src="./image/Group5.svg" alt="logo">
+                <img src="./image/Group5(1).png" alt="logo">
                 <ul class="header__list">
                     <li class="header__item">HOME</li>
                     <li><a class="header__list header__link" href="../day-2/index.html">ABOUT US</a></li>
-                    <li class="header__item">CREATE YOUR PLAN</li>
+                    <li><a class="header__list header__link" href="../day-3/index.html">CREATE YOUR PLAN</a></li>
                 </ul>
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </header>
         <main class="main">
@@ -36,24 +41,32 @@
                 <img class="collection__top" src="./image/Group13.png" alt="coffee">
                 <ul class="collection__list">
                     <li class="collection__item">
-                        <img src="./image/kopi1copy.png" alt="Gran Espresso">
-                        <h3 class="collection__title">Gran Espresso</h3>
-                        <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                        <img class="collection__img" src="./image/kopi1copy.png" alt="Gran Espresso">
+                        <div class="collection__div">
+                            <h3 class="collection__title">Gran Espresso</h3>
+                            <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                        </div>
                     </li>
                     <li class="collection__item">
-                        <img src="./image/kopi2.png" alt="Planalto">
-                        <h3 class="collection__title">Planalto</h3>
-                        <p class="collection__text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+                        <img class="collection__img" src="./image/kopi2.png" alt="Planalto">
+                        <div class="collection__div">
+                            <h3 class="collection__title">Planalto</h3>
+                            <p class="collection__text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+                        </div>
                     </li>
                     <li class="collection__item">
-                        <img src="./image/kopi3.png" alt="Piccollo">
-                        <h3 class="collection__title">Piccollo</h3>
-                        <p class="collection__text">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+                        <img class="collection__img" src="./image/kopi3.png" alt="Piccollo">
+                        <div class="collection__div">
+                            <h3 class="collection__title">Piccollo</h3>
+                            <p class="collection__text">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+                        </div>
                     </li>
                     <li class="collection__item">
-                        <img src="./image/kopi4.png" alt="Danche">
-                        <h3 class="collection__title">Danche</h3>
-                        <p class="collection__text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                        <img class="collection__img" src="./image/kopi4.png" alt="Danche">
+                        <div class="collection__div">
+                            <h3 class="collection__title">Danche</h3>
+                            <p class="collection__text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -65,18 +78,24 @@
                 <ul class="middle__list">
                     <li class="middle__item">
                         <img class="item__img" src="./image/Shape.png" alt="coffee">
-                        <h3 class="item__title">Best quality</h3>
-                        <p class="item__text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                        <div class="middle__div">
+                            <h3 class="item__title">Best quality</h3>
+                            <p class="item__text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                        </div>
                     </li>
                     <li class="middle__item">
                         <img class="item__img" src="./image/CombinedShape.png" alt="coffee">
-                        <h3 class="item__title">Exclusive benefits</h3>
-                        <p class="item__text">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                        <div class="middle__div">
+                            <h3 class="item__title">Exclusive benefits</h3>
+                            <p class="item__text">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                        </div>
                     </li>
                     <li class="middle__item">
                         <img class="item__img" src="./image/Shape.png" alt="coffee">
-                        <h3 class="item__title">Free shipping</h3>
-                        <p class="item__text">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                        <div class="middle__div">
+                            <h3 class="item__title">Free shipping</h3>
+                            <p class="item__text">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -113,7 +132,7 @@
             <div class="footer__left">
                 <img src="./image/Group5.png" alt="coffee">
                 <ul class="footer__list">
-                    <li class="footer__item">HOME</li>
+                    <li class="footer__item"><a class="item__home" href="#">HOME</a></li>
                     <li class="footer__item">ABOUT US</li>
                     <li class="footer__item">CREATE YOUR PLAN</li>
                 </ul>

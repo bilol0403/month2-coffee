@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    background: #FEFCF7;
+  }
+  button{
+    padding: 14px 31px;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    background:$btn-color;
+    border-radius: 6px;
+
+    &:active{
+      background-color: #66D2CF;
+    }
+  }

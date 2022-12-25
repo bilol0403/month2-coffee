@@ -1,0 +1,68 @@
+.intro{
+    margin-top: 30px;
+    padding: 80px 85px 0;
+    background-image: url(/day-1/image/Bitmap.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #FEFCF7;
+
+    &__title{
+        width: 493px;
+        @extend %font;
+        @include text(72px, 72px);
+    }
+
+    &__text{
+        width: 405px;
+        padding-bottom: 50px;
+        @extend %font2;
+        @include text(16px, 26px);
+        opacity: 0.8;
+        mix-blend-mode: normal;
+    }
+    &__btn{
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width:900px){
+    .intro{
+        width: 100%;
+        background-size: 900px;
+        padding: 70px 58px;
+        // margin-left: 30px;
+        &__title{
+            width: 329px;
+            @extend %font;
+            @include text(48px, 48px);
+        }
+        &__text{
+            width: 398px;
+            padding-bottom: 30px;
+            @extend %font2;
+            @include text(15px, 25px);
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .intro{
+        background-size: 600px;
+        height: 500px;
+        background-image: url(/day-1/image/Bitmap\ \(5\).jpg);
+        &__title{
+            width: 279px;
+            padding-bottom: 24px;
+            text-align: center;
+            @include text(40px, 40px);
+        }
+        &__text{
+            width: 279px;
+            padding-bottom: 39px;
+            text-align: center;
+            @include text(15px, 25px);
+        }
+        &__btn{
+            margin-left: 55px;
+            margin-bottom: 99px;
+        }
+    }
+}
